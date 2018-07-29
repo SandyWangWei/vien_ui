@@ -24,7 +24,12 @@
             android:layout_height="wrap_content"
             android:focusable="true"
             android:clickable="true"
-            android:focusableInTouchMode="true"/>
+            android:focusableInTouchMode="true"
+            android:visibility="gone"/>
+
+        <com.eproject.vien.widget.KaraokeReceiveLoadingView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
     </RelativeLayout>
 

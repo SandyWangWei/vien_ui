@@ -79,7 +79,6 @@ public class KaraokeSeekBar extends View{
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int width = measureWidth(widthMeasureSpec);
         mSeekBarWidth = width;
         mThumbOffset = width/2;
