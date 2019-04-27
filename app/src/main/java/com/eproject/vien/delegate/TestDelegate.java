@@ -20,25 +20,25 @@ public class TestDelegate extends AppDelegate {
 
     @Override
     public void initWidget() {
-
-        seekBar = get(R.id.karaoke_seek_bar);
-        seekBar.setOnSeekBarChangeListener(new KaraokeSeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressBefore() {
-                Log.d("vienwang","onProgressBefore");
-            }
-
-            @Override
-            public void onProgressChanged(KaraokeSeekBar seekBar, double progress) {
-                Log.d("vienwang","onProgressChanged progress:" + progress);
-            }
-
-            @Override
-            public void onProgressAfter() {
-                Log.d("vienwang","onProgressAfter");
-            }
-        });
-        seekBar.requestFocus();
+//
+//        seekBar = get(R.id.karaoke_seek_bar);
+//        seekBar.setOnSeekBarChangeListener(new KaraokeSeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressBefore() {
+//                Log.d("vienwang","onProgressBefore");
+//            }
+//
+//            @Override
+//            public void onProgressChanged(KaraokeSeekBar seekBar, double progress) {
+//                Log.d("vienwang","onProgressChanged progress:" + progress);
+//            }
+//
+//            @Override
+//            public void onProgressAfter() {
+//                Log.d("vienwang","onProgressAfter");
+//            }
+//        });
+//        seekBar.requestFocus();
 
     }
 }
