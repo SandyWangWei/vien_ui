@@ -4,4 +4,7 @@
     <dimen name="karaoke_seek_bar_thumb_height">30dp</dimen>
     <dimen name="karaoke_seek_bar_height">24dp</dimen>
 
+    <dimen name="karaoke_control_margin_top">300dp</dimen>
+    <dimen name="karaoke_control_text_size">60dp</dimen>
+
 </resources>

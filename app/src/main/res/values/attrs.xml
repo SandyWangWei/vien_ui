@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ControlLayout">
+        <attr name="marginSpace" format="integer"/>
+        <attr name="textSize" format="integer"/>
+        <attr name="lightColor" format="color"/>
+        <attr name="defaultColor" format="color"/>
+        <attr name="withAnim" format="boolean"/>
+    </declare-styleable>
+
+
+
+</resources>
