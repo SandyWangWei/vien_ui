@@ -3,10 +3,14 @@ package com.eproject.vien.vienhome;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.eproject.vien.widget.TestDialog;
 import com.eproject.vien.widget.control.ControlLayout;
 import com.eproject.vien.widget.control.ControlMenuAdapter;
 import com.eproject.vien.widget.control.ControlMenuInfo;
@@ -20,6 +24,29 @@ public class ControlActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control);
 
+        findViewById(R.id.btn_up).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.btn_down).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                testDialog();
+            }
+        });
+    }
+
+    private void testDialog(){
+        TestDialog dialog = new TestDialog(this);
+        dialog.show();
+    }
+
+    private void testControl(){
         final ControlLayout layout = findViewById(R.id.control_view);
 
         ControlMenuAdapter adapter = new ControlMenuAdapter();

@@ -117,6 +117,9 @@ public class ControlLayout extends ViewGroup {
 
     private void layoutChildren() {
 
+        if(adapter == null){
+            return;
+        }
         int mMenuCount = adapter.getCount();
 
         int mMenuBtnHeight = 0;
